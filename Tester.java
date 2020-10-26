@@ -20,6 +20,8 @@ public class Tester {
     System.out.println("Testing isRowMagic() on array" + Arrays.deepToString(arrTwoDimension));
     System.out.println(ArrayOps.isRowMagic(arrTwoDimension) + "\n");
     int[][] arrTwoDimension2 = {{2,4,6},{1,8,3}};
+    System.out.println("Testing isRowMagic() on array" + Arrays.deepToString(arrTwoDimension2));
+    System.out.println(ArrayOps.isRowMagic(arrTwoDimension2) + "\n");
     System.out.println("Testing isColMagic() on array" + Arrays.deepToString(arrTwoDimension));
     System.out.println(ArrayOps.isColMagic(arrTwoDimension) + "\n");
     int[][] arrTwoDimension3 = {{1,2,3},{6,5,4}};
