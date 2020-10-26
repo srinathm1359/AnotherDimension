@@ -11,5 +11,7 @@ public class Tester {
     System.out.println(Arrays.toString(ArrayOps.sumRows(arrTwoDimension)));
     System.out.println("Testing largestInRows() on array " + Arrays.deepToString(arrTwoDimension));
     System.out.println(Arrays.toString(ArrayOps.largestInRows(arrTwoDimension)));
+    System.out.println("Testing sum() on array " + Arrays.deepToString(arrTwoDimension));
+    System.out.println(ArrayOps.sum(arrTwoDimension));
   }
 }
