@@ -32,4 +32,15 @@ public class ArrayOps {
   public static int sum(int[][] arr) {
     return sum(sumRows(arr));
   }
+  public static int[][] transpose(int[][] matrix) {
+    int transposeHeight = matrix.length;
+    int transposeLength = matrix[0].length;
+    int[][] transposeMatrix = new int[transposeLength][transposeHeight];
+    for (int row = 0; row < transposeLength; row++) {
+      for (int col = 0; col < transposeHeight; col++) {
+        transposeMatrix[row][col] = matrix[col][row];
+      }
+    }
+    return transposeMatrix;
+  }
 }
