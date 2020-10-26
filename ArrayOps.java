@@ -8,5 +8,11 @@ public class ArrayOps {
   }
   public static int largest(int[] arr) {
     int biggest = arr[0];
+    for (int i = 1; i < arr.length; i++) {
+      if (biggest < arr[i]) {
+        biggest = arr[i];
+      }
+    }
+    return biggest;
   }
 }
