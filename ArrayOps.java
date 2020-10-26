@@ -46,4 +46,14 @@ public class ArrayOps {
   public static int[] sumCols(int[][] matrix) {
     return sumRows(transpose(matrix));
   }
+  public static boolean isRowMagic(int[][] matrix) {
+    boolean toReturn = true;
+    int currentSum = sum(matrix[0]);
+    for (int row = 1; row < matrix.length; row++) {
+      if (currentSum != sum(matrix[row])) {
+        return false;
+      }
+    }
+    return true;
+  }
 }

@@ -17,5 +17,10 @@ public class Tester {
     System.out.println(Arrays.deepToString(ArrayOps.transpose(arrTwoDimension)) + "\n");
     System.out.println("Testing sumCols() on array" + Arrays.deepToString(arrTwoDimension));
     System.out.println(Arrays.toString(ArrayOps.sumCols(arrTwoDimension)) + "\n");
+    System.out.println("Testing isRowMagic() on array" + Arrays.deepToString(arrTwoDimension));
+    System.out.println(ArrayOps.isRowMagic(arrTwoDimension) + "\n");
+    int[][] arrTwoDimension2 = {{2,4,6},{1,8,3}};
+    System.out.println("Testing isRowMagic() on array" + Arrays.deepToString(arrTwoDimension2));
+    System.out.println(ArrayOps.isRowMagic(arrTwoDimension2));
   }
 }
