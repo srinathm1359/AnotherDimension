@@ -9,5 +9,7 @@ public class Tester {
     int[][] arrTwoDimension = {{2,3,5},{7,11,13}};
     System.out.println("Testing sumRows() on array " + Arrays.deepToString(arrTwoDimension));
     System.out.println(Arrays.toString(ArrayOps.sumRows(arrTwoDimension)));
+    System.out.println("Testing largestInRows() on array " + Arrays.deepToString(arrTwoDimension));
+    System.out.println(Arrays.toString(ArrayOps.largestInRows(arrTwoDimension)));
   }
 }
