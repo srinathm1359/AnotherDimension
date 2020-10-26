@@ -6,4 +6,7 @@ public class ArrayOps {
     }
     return totalSum;
   }
+  public static int largest(int[] arr) {
+    int biggest = arr[0];
+  }
 }
