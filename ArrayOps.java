@@ -43,4 +43,7 @@ public class ArrayOps {
     }
     return transposeMatrix;
   }
+  public static int[] sumCols(int[][] matrix) {
+    return sumRows(transpose(matrix));
+  }
 }

@@ -15,5 +15,7 @@ public class Tester {
     System.out.println(ArrayOps.sum(arrTwoDimension));
     System.out.println("Testing transpose() on array" + Arrays.deepToString(arrTwoDimension));
     System.out.println(Arrays.deepToString(ArrayOps.transpose(arrTwoDimension)));
+    System.out.println("Testing sumCols() on array" + Arrays.deepToString(arrTwoDimension));
+    System.out.println(Arrays.toString(ArrayOps.sumCols(arrTwoDimension)));
   }
 }
