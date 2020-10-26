@@ -60,4 +60,10 @@ public class ArrayOps {
   public static boolean isColMagic(int[][] matrix) {
     return isRowMagic(transpose(matrix));
   }
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    int[][] transposeMatrix = transpose(matrix);
+    int rowSum = sum(matrix[row]);
+    int colSum = sum(transposeMatrix[col]);
+    return (rowSum == colSum);
+  }
 }

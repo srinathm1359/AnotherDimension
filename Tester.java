@@ -26,6 +26,13 @@ public class Tester {
     System.out.println(ArrayOps.isColMagic(arrTwoDimension) + "\n");
     int[][] arrTwoDimension3 = {{1,2,3},{6,5,4}};
     System.out.println("Testing isColMagic() on array" + Arrays.deepToString(arrTwoDimension3));
-    System.out.println(ArrayOps.isColMagic(arrTwoDimension3));
+    System.out.println(ArrayOps.isColMagic(arrTwoDimension3) + "\n");
+    int[][] arrTwoDimension4 = {{1,2,4},{6,5,4}};
+    System.out.println("Testing isLocationMagic() on array" + Arrays.deepToString(arrTwoDimension4) + " in position (0,0)");
+    System.out.println(ArrayOps.isLocationMagic(arrTwoDimension4, 0, 0) + "\n");
+    System.out.println("Testing isLocationMagic() on array" + Arrays.deepToString(arrTwoDimension4) + " in position (0,1)");
+    System.out.println(ArrayOps.isLocationMagic(arrTwoDimension4, 0, 1) + "\n");
+    System.out.println("Testing isLocationMagic() on array" + Arrays.deepToString(arrTwoDimension4) + " in position (1,1)");
+    System.out.println(ArrayOps.isLocationMagic(arrTwoDimension4, 1, 1));
   }
 }
